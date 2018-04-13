@@ -1,0 +1,18 @@
+* {
+  font-family: Tahoma;
+  text-align: center;
+}
+div {
+  width: 50%;
+  height: auto;
+  border: solid 4px blue;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 10px;
+  background-color: lightgray;
+  overflow-x: auto;
+  position: center;
+}
+li {
+  text-align: left;
+}
