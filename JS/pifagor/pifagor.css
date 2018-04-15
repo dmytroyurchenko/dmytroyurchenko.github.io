@@ -1,0 +1,17 @@
+
+#Table {
+	display: table;
+  margin: auto;
+  width: 50%;
+}
+
+.Row {
+	display: table-row;
+  }
+
+.Cell {
+	display: table-cell;
+  border: 1px solid black;
+	padding: 3px 10px;
+  text-align: center;
+}
