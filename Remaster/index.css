@@ -1,52 +1,124 @@
-
-
-body{
-     background-color:black;
-     color: orange;
+* {
+    box-sizing: border-box;
 }
 
-h1{
-   color:orange;
-   font-family:verdana;
-   font-size:300%;
-   text-align: center;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    color: orange;
+    background-color: #000;
+}
+/* Style the main logo on the page */
+#logo{
+  display: block;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background: #000;
+  padding: 1px;
+  color: inherit;
+  text-align: center;
+  }
+div#logo h5{
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-color: inherit;
+}
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+/* Style the header */
+header {
+    padding: 10px;
+    text-align: center;
+    background:#555;
+    color: white;
 }
 
-p{
-   color:orange;
-   font-family:helvetica;
-   font-size:100%;
-}
-pre{
-   color:orange;
-   font-family:helvetica;
-   font-size:100%;
-}
+/* Style the top navigation bar */
 nav {
-  width: 100%;
+    overflow: hidden;
+    background-color: #000;
 }
-nav li{
-   position: sticky;
-   margin: 16px;
-   overflow: hidden;
-   background-color: #333333;
-   font-family:helvetica;
-   font-size:100%;
-   display: block;
-   color: white;
-   text-align: center;
-   float: none;
-   margin-top: 16px;
-   margin-bottom: 16px;
-   text-decoration: none;
-   list-style-type: none;
-   
+
+/* Style the navigation bar links */
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 20px;
+    width: auto;
+    text-decoration: none;
+}
+
+nav a.right {
+    float: right;
 }
 
 nav a:hover {
-   background-color: #000000;
+    background-color: #555;
+    color:orange;
 }
 
-img {
-  position: center;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #555;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: #000;
+    padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    nav a {
+        float: none;
+        width:100%;
+    }
+}
+h2, h5 {
+  text-align: center;
+}
+details{
+  display: none;
+}
+h5#specs:hover, h5#specsx:hover {
+      background-color: #555;
+      color:#fff;
+}
+
+form{
+  width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+}
+footer h5{
+    display: border-box;
+    text-align: center;
+    background-color: inherit;
+    color: inherit;
 }
