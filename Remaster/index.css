@@ -8,7 +8,7 @@ body {
     color: orange;
     background-color: #000;
 }
-/* Style the main logo on the page */
+
 #logo{
   display: block;
   height: auto;
@@ -30,7 +30,6 @@ div#logo h5{
       height: auto;
   }
 
-/* Style the header */
 header {
     padding: 10px;
     text-align: center;
@@ -38,13 +37,11 @@ header {
     color: white;
 }
 
-/* Style the top navigation bar */
 nav {
     overflow: hidden;
     background-color: #000;
 }
 
-/* Style the navigation bar links */
 nav a {
     float: left;
     display: block;
@@ -69,15 +66,12 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
 .side {
     flex: 30%;
     background-color: #555;
     padding: 20px;
 }
 
-/* Main column */
 .main {
     flex: 70%;
     background-color: #000;
