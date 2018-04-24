@@ -96,9 +96,17 @@ h2, h5 {
 details{
   display: none;
 }
-h5#specs:hover, h5#specsx:hover {
+
+div#specs, div#specsx{
+  background-color: inherit;
+  color: inherit;
+  text-align: center;
+}
+
+div#specs:hover, div#specsx:hover {
       background-color: #555;
       color:#fff;
+      cursor: pointer;
 }
 
 form{
