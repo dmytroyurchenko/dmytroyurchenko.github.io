@@ -4,19 +4,19 @@ lastfm.tracker = (function(){
 
 	//Set up an object for DOM elements and data source
 	var config = {
-		getMostPopularArtistsURL: "http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=jimmersjukebox&api_key=6db1989bd348bf91797bad802c6645d8&format=json",
-		user: "jimmersjukebox",
+		getTopArtistsURL: "http://ws.audioscrobbler.com/2.0/?method=chart.gettopartists&api_key=1af3e272563e82dcfe131c68b84f4530&format=json",
+		user: "remaster_custom",
 	};
 
 
 	var setupLastFM = function(){
-		createPopularArtistsChart();
+		createTopArtistsChart();
 	};
 
 
-	var createPopularArtistsChart = function(){
-		$.getJSON(config.getMostPopularArtistsURL,function(data){
-			var artistData = data.topartists.artist,
+	var createTopArtistsChart = function(){
+		$.getJSON(config.getTopArtistsURL,function(data){
+			var artistData = data.artists.artist,
 			artists = $.map(artistData, function(artist) {
 				return [[artist.name]];
 			}),
@@ -28,8 +28,8 @@ lastfm.tracker = (function(){
 			playcountsArray = playcounts.slice(0,10);
 			artistsArray = artists.slice(0,10);
 
-            playcountsArray.unshift('playcount');
-            artistsArray.unshift('x');
+            playcountsArray.unshift("playcount");
+            artistsArray.unshift("x");
 
 
 			var popularArtists = c3.generate({

@@ -1,11 +1,13 @@
 /*-- Chart --*/
-
+*{
+  fill: orange;
+}
 .c3 svg {
   font: 10px sans-serif;
 }
 .c3 path, .c3 line {
   fill: none;
-  stroke: #000;
+  stroke: #fff;
 }
 .c3 text {
   -webkit-user-select: none;
@@ -26,7 +28,7 @@
 
 }
 .c3-chart-arc text {
-  fill: #fff;
+  fill: orange;
   font-size: 13px;
 }
 
@@ -64,6 +66,7 @@
 /*-- Text on Chart --*/
 
 .c3-text {
+
 }
 
 .c3-text.c3-empty {
@@ -91,9 +94,10 @@
 
 .c3-bar {
   stroke-width: 0;
+
 }
 .c3-bar._expanded_ {
-  fill-opacity: 0.75;
+  fill-opacity: 0.1;
 }
 
 /*-- Arc --*/
@@ -129,7 +133,7 @@
 /*-- Legend --*/
 
 .c3-legend-item {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .c3-legend-background {
