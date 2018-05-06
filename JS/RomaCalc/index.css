@@ -1,0 +1,56 @@
+#main {
+
+  display: flex;
+  margin: 4px;
+  width: 400px;
+  height: 320px;
+  border-radius: 10px;
+  border: 2px black;
+  flex-direction: column;
+  align-items: stretch;
+  border-width: 2px;
+  background-color: red;
+
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+}
+
+.row {
+	display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 5px;
+
+  }
+
+.cell, #out_cell {
+	flex-grow: 1;
+  flex-basis: 25%;
+  box-sizing: border-box;
+
+  border: 2px solid black;
+  padding: 3px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border-width: 2px;
+  margin: 5px;
+  background-color: #ddd;
+}
+
+.cell:hover {
+  background-color: #999;
+}
+
+#out_cell {
+  border-width: 5px;
+  background-color: #777;
+  text-align: right;
+  color: black;
+  font-family: Tahoma;
+  font-size: 200%;
+}
